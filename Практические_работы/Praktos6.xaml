@@ -1,0 +1,71 @@
+﻿<Window x:Class="Практические_работы.Praktos6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Практические_работы"
+        mc:Ignorable="d"
+        Title="Praktos6" Height="450" Width="485">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="10*"/>
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.ColumnSpan="3" Grid.Row="1" Grid.Column="1" Content="Первая тройка чисел: "
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <TextBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Width="100" Height="30" x:Name="tbTr1Value1" TextChanged="TextChanged"/>
+        <TextBox Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Width="100" Height="30" x:Name="tbTr1Value2" TextChanged="TextChanged"/>
+        <TextBox Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Width="100" Height="30" x:Name="tbTr1Value3" TextChanged="TextChanged"/>
+
+        
+        
+        <Label Grid.ColumnSpan="3" Grid.Row="3" Grid.Column="1" Content="Вторая тройка чисел: "
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <TextBox Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Width="100" Height="30" x:Name="tbTr2Value1" TextChanged="TextChanged2"/>
+        <TextBox Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Width="100" Height="30" x:Name="tbTr2Value2" TextChanged="TextChanged2"/>
+        <TextBox Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Width="100" Height="30" x:Name="tbTr2Value3" TextChanged="TextChanged2"/>
+
+
+        <Label Grid.Row="6" Grid.Column="1" Content="Результат: "
+               VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <TextBox Grid.Row="6" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"
+                 Width="100" Height="30" x:Name="tbResult" IsReadOnly="True"/>
+        
+        
+        <Button Grid.Column="1" Content="Числа первой тройки равны" HorizontalAlignment="Center"  Grid.Row="7"
+                VerticalAlignment="Center" Width="100" Height="30" FontSize="7" Click="btn_IsFirstTrEqual"/>
+
+        <Button Grid.Column="2" Content="Числа второй тройки равны" HorizontalAlignment="Center" Grid.Row="7"
+                VerticalAlignment="Center" Width="100" Height="30" FontSize="7" Click="btn_IsSecondTrEqual"/>
+
+        <Button Grid.Column="3" Content="Обе тройки равны" HorizontalAlignment="Center" Grid.Row="7"
+                VerticalAlignment="Center" Width="100" Height="30" FontSize="10" Click="btn_IsBothTrsEqual"/>
+        
+    </Grid>
+</Window>

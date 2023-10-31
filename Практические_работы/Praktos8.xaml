@@ -1,0 +1,75 @@
+﻿<Window x:Class="Практические_работы.Praktos8"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Практические_работы"
+        mc:Ignorable="d"
+        Title="Praktos8" Height="667" Width="710">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="171*"/>
+            <ColumnDefinition Width="300*"/>
+            <ColumnDefinition Width="300*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+        
+        </Grid.RowDefinitions>
+
+        <Label Content="Характеристика" VerticalAlignment="Center"
+               HorizontalAlignment="Center" FontSize="20"/>
+        <Label Content="Студент 1" HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontSize="20" Grid.Column="1"/>
+        <Label Grid.Column="2" HorizontalAlignment="Center"
+               VerticalAlignment="Center" FontSize="20" Content="Студент2"/>
+
+        <Label Content="Имя:" Grid.Row="1" FontSize="20"
+               VerticalAlignment="Center" HorizontalAlignment="center"/>
+        <Label Content="Фамилия:" Grid.Row="3" VerticalAlignment="Center"
+               HorizontalAlignment="Center" FontSize="20"/>
+        <Label Content="Возраст: " VerticalAlignment="Center" HorizontalAlignment="Center"
+               Grid.Row="5" FontSize="20"/>
+        <Label Content="Пол:" VerticalAlignment="Center" HorizontalAlignment="Center"
+               Grid.Row="7" FontSize="20" />
+        <Label Grid.Row="9" Content="Группа"  VerticalAlignment="Center"
+               HorizontalAlignment="Center" FontSize="20"/>
+
+        <TextBox FontSize="20" Grid.Row="1" Grid.Column="1" Width="250" Height="45" x:Name="tbSt1FName" TextChanged="tbStudent1_TextChanged"/>
+        <TextBox FontSize="20" Grid.Row="1" Grid.Column="2" Width="250" Height="45" x:Name="tbSt2FName" TextChanged="tbStudent2_TextChanged"/>
+
+        <TextBox FontSize="20" Grid.Row="3" Grid.Column="1" Width="250" Height="45" x:Name="tbSt1SName" TextChanged="tbStudent1_TextChanged"/>
+        <TextBox FontSize="20" Grid.Row="3" Grid.Column="2" Width="250" Height="45" x:Name="tbSt2SName" TextChanged="tbStudent2_TextChanged"/>
+
+        <TextBox FontSize="20" Grid.Row="5" Grid.Column="1" Width="250" Height="45" x:Name="tbSt1Age" TextChanged="tbStudent1_TextChanged"/>
+        <TextBox FontSize="20" Grid.Row="5" Grid.Column="2" Width="250" Height="45" x:Name="tbSt2Age" TextChanged="tbStudent2_TextChanged"/>
+
+        <TextBox FontSize="20" Grid.Row="7" Grid.Column="1" Width="250" Height="45" x:Name="tbSt1Gender" TextChanged="tbStudent1_TextChanged"/>
+        <TextBox FontSize="20" Grid.Row="7" Grid.Column="2" Width="250" Height="45" x:Name="tbSt2Gender" TextChanged="tbStudent2_TextChanged"/>
+
+        <TextBox FontSize="20" Grid.Row="9" Grid.Column="1" Width="250" Height="45" x:Name="tbSt1Group" TextChanged="tbStudent1_TextChanged"/>
+        <TextBox FontSize="20" Grid.Row="9" Grid.Column="2" Width="250" Height="45" x:Name="tbSt2Group" TextChanged="tbStudent2_TextChanged"/>
+
+        <Button Grid.Row="10" Content="Сравнить" Width="100" FontSize="20" Background="White" Height="45" VerticalAlignment="Center" HorizontalAlignment="Center" Click="btnCompare_Click"/>
+        <Button Grid.Row="10" Grid.Column="1" Content="Посмотреть карточку" Width="250" FontSize="20" Background="White" Height="45" VerticalAlignment="Center" HorizontalAlignment="Center" Click="btnStudent1_Click"/>
+        <Button Grid.Row="10" Grid.Column="2" Content="Посмотреть карточку" Width="250" FontSize="20" Background="White" Height="45" VerticalAlignment="Center" HorizontalAlignment="Center" Click="btnStudent2_Click"/>
+
+
+    </Grid>
+</Window>

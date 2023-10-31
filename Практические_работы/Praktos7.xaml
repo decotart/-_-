@@ -1,0 +1,103 @@
+﻿<Window x:Class="Практические_работы.Praktos7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Практические_работы"
+        mc:Ignorable="d"
+        Title="Praktos7" Height="774" Width="678">
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="3">
+        
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox VerticalAlignment="Center" HorizontalAlignment="Center"
+                     Width="200" Height="60" Grid.Column="0" x:Name="tbValue1" FontSize="25"/>
+
+            <TextBox VerticalAlignment="Center" HorizontalAlignment="Center"
+                     Width="200" Height="60" Grid.Column="1" x:Name="tbValue2" FontSize="25"/>
+
+            <TextBox VerticalAlignment="Center" HorizontalAlignment="Center"
+                     Width="200" Height="60" Grid.Column="2" x:Name="tbValue3" FontSize="25"/>
+
+        </Grid>
+
+        <Label Grid.Row="2" Content="Размеры сторон: " VerticalAlignment="Center"
+               HorizontalAlignment="Center" FontSize="30"/>
+
+        <Label Grid.Row="5" Content="Углы треугольника: " FontSize="30" VerticalAlignment="Center"
+               HorizontalAlignment="Center"/>
+
+        <Grid Grid.Row="6">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" IsReadOnly="True"
+                     Width="200" Height="60" Grid.Column="0" x:Name="tbAngle1" FontSize="25"/>
+
+            <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" IsReadOnly="True"
+                     Width="200" Height="60" Grid.Column="1" x:Name="tbAngle2" FontSize="25"/>
+
+            <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" IsReadOnly="True"
+                     Width="200" Height="60" Grid.Column="2" x:Name="tbAngle3" FontSize="25"/>
+
+        </Grid>
+
+        <Button Grid.Row="4" Content="Рассчитать" FontSize="30" VerticalAlignment="Center"
+                HorizontalAlignment="Center" Width="500" Height="60" Background="White"
+                BorderBrush="Black" Click="btnCount_Click"/>
+
+        <Grid Grid.Row="7">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" FontSize="30" Content="Площадь: " VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+
+            <TextBox x:Name="tbArea" Grid.Column="1" VerticalAlignment="Center" IsReadOnly="True"
+                     HorizontalAlignment="Center" Width="200" Height="60" FontSize="25"/>
+
+        </Grid>
+
+        <Grid Grid.Row="8">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" FontSize="30" Content="Периметр: " VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+
+            <TextBox x:Name="tbPerimeter" Grid.Column="1" VerticalAlignment="Center" IsReadOnly="True"
+                     HorizontalAlignment="Center" Width="200" Height="60" FontSize="25"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
